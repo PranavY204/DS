@@ -66,7 +66,7 @@ bool isEmpty(){
 }
 
 void push(int a){
-    if (pos == 9){
+    if (pos == size-1){
         printf("Stack Overflow condition");
         return;
     }
