@@ -68,7 +68,7 @@ void display(){
 }
 
 bool character(char c){
-    return (c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z');
+    return (c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z') || (c >= '0' && c <= '9');
 }
 
 bool lower_precedence(char op1, char op2){
