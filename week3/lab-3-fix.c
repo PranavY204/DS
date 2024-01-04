@@ -40,7 +40,7 @@ bool isEmpty(){
 }
 
 void push(char a){
-    if (pos == 9){
+    if (pos == size-1){
         printf("Stack Overflow condition");
         return;
     }
