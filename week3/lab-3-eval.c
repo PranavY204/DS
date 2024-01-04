@@ -40,7 +40,7 @@ int main(){
                     push(n2/n1);
                     break;
                 case '^':
-                    push(n1^n2);
+                    push(n2^n1);
                     break;
                 default:
                     printf("Something is wrong");
