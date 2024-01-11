@@ -43,7 +43,7 @@ void insert(int data, int position){
     if (position == 0){
         node* new_node = (node*)malloc(sizeof(node));
         new_node->data = data;
-        new_node->next = head;
+        new_node->next = NULL;
         head = new_node;
         count++;
         return;
