@@ -17,15 +17,13 @@ void inorder(node **root);
 
 int main(){
     int choice, data;
-    insert(&root, 8);
-    insert(&root, 3);
-    insert(&root, 1);
-    insert(&root, 6);
-    insert(&root, 4);
-    insert(&root, 7);
+    insert(&root, 100);
+    insert(&root, 20);
+    insert(&root, 200);
     insert(&root, 10);
-    insert(&root, 14);
-    insert(&root, 13);
+    insert(&root, 30);
+    insert(&root, 150);
+    insert(&root, 300);
     printf("1. Preorder\n2. Inorder\n3. Postorder\n4. Exit\nChoice: ");
     scanf("%d", &choice);
     while (choice != 4){
