@@ -7,13 +7,13 @@
 void push(int a);
 int pop();
 void display();
-void bfs(int graph[][7]);
+void bfs(int graph[][size]);
 
 int fpos = -1, rpos = -1;
 int queue[size];
 
 int main(){
-   int adj_matrix[7][7] = {
+   int adj_matrix[size][size] = {
         {0, 1, 0, 1, 0, 0, 0},
         {1, 0, 1, 1, 0, 1, 1},
         {0, 1, 0, 1, 1, 1, 0},
@@ -22,19 +22,19 @@ int main(){
         {0, 1, 1, 0, 0, 0, 0},
         {0, 1, 0, 0, 1, 0, 0},
     };
-    for(int i = 0; i < 7; i++) queue[i] = NULL;
+    for(int i = 0; i < size; i++) queue[i] = NULL;
     // display();
     bfs(adj_matrix);
     return 0;
 
 }
 
-void bfs(int graph[][7]){
-    int visited[7];
-    for(int i = 0; i < 7; i++) visited[i] = 0;
+void bfs(int graph[][size]){
+    int visited[size];
+    for(int i = 0; i < size; i++) visited[i] = 0;
     push(0); visited[0]= 1;
     while (fpos != size){
-        for(int i = 0; i < 7; i++){
+        for(int i = 0; i < size; i++){
             if(graph[queue[fpos]][i] == 1 && visited[i] != 1){
                 push(i);
                 visited[i] = 1;
